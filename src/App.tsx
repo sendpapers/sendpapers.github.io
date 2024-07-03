@@ -7,7 +7,9 @@ import WebApp from '@twa-dev/sdk'
 
 function App() {
   const [count, setCount] = useState(0)
-  var chkver = WebApp.version
+  // var chkver = WebApp.version
+  WebApp.ready();
+
 
   return (
     <>
@@ -24,18 +26,21 @@ function App() {
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
-        <p>
+        {/*<p>
           Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
+        </p>*/}
       </div>
-      <div className="card">
+      {/*<div className="card">
         <button onClick={() => chkver = WebApp.version}>
           Version is {chkver}
         </button>
-      </div>
-      <p className="read-the-docs">
+      </div>*/}
+      {/*<p className="read-the-docs">
         Click on the Vite and React logos to learn more
-      </p>
+      </p>*/}
+      
+        <iframe src="https://www.google.com/maps/d/embed?mid=11or2lgzlYn4eVsfcxZ-YsUCtd_hmXf8&ehbc=2E312F" width="100%" height="400px"></iframe>
+      
     </>
   )
 }
